@@ -4,14 +4,15 @@
  */
 
 exports.server = {
-	port: 8080,
-	host: 'localhost',
+	port: 8001,
+	host: '0.0.0.0',
+	url: 'https://video-editor-web.run.goorm.io',
 
 	get serverUrl() {
-		return `http://${this.host}:${this.port}`;
+		return `${this.url}`;
 	},
 	get apiUrl() {
-		return `http://${this.host}:${this.port}/api`;
+		return `${this.url}/api`; // `http://${this.host}:${this.port}/api`;
 	},
 };
 

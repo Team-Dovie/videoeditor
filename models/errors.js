@@ -6,33 +6,33 @@
 const errors = {
 	get uploadMissingFile400() { return {
 		code: 400,
-		err: 'Chybí soubor.',
-		msg: 'Tělo požadavku musí obsahovat soubor k nahrání.',
+		err: '파일이 없습니다.',
+		msg: '요청 본문에는 업로드할 파일이 포함되어야 합니다.',
 	};},
 	get parameterTrackMissing400() { return {
 		code: 400,
-		err: 'Chybí parametry.',
-		msg: 'Chybí povinný parametr "track"',
+		err: '매개변수가 누락되었습니다.',
+		msg: '필수 "트랙" 매개변수 누락',
 	};},
 	get parameterTrackTypeMissing400() { return {
 		code: 400,
-		err: 'Chybný parametr.',
-		msg: 'Chybí parametr type, nebo má jinou hodnotu, než "video" nebo "audio".',
+		err: '잘못된 매개변수입니다.',
+		msg: '유형 매개변수가 누락되었거나 "video" 또는 "audio"가 아닌 값이 있습니다.',
 	};},
 	get parameterItemMissing400() { return {
 		code: 400,
-		err: 'Chybí parametry',
-		msg: 'Parametr track nebo item chybí.',
+		err: '누락된 매개변수',
+		msg: '트랙 또는 항목 매개변수가 누락되었습니다.',
 	};},
 	get parameterDurationMissing400() { return {
 		code: 400,
-		err: 'Chybí délka trvání.',
-		msg: 'Pro vložení obrázku na časovou osu je nutné zadat trvání ve formátu 00:00:00,000.',
+		err: '기간이 누락되었습니다.',
+		msg: '타임라인에 이미지를 삽입하려면 00: 00: 00,000 형식으로 재생 시간을 입력해야 합니다.',
 	};},
 	get parameterSplitMissing400() { return {
 		code: 400,
-		err: 'Chybí parametry.',
-		msg: 'Chybí povinné parametry: track, item, time.',
+		err: '매개변수가 누락되었습니다.',
+		msg: 'track, item, time과 같은 필수 매개변수가 누락되었습니다.',
 	};},
 	get parameterFilterMissing400() { return {
 		code: 400,
@@ -91,8 +91,8 @@ const errors = {
 	};},
 	get videoDurationMissing400() { return {
 		code: 400,
-		err: 'Chybí délka souboru.',
-		msg: 'Video nemá zjištěnou délku. Opakujte akci, nebo soubor nahrajte znovu.',
+		err: '파일 길이가 없습니다.',
+		msg: '비디오에 감지된 길이가 없습니다. 다시 시도하거나 파일을 다시 업로드하십시오.',
 	};},
 	get audioDurationMissing400() { return {
 		code: 400,

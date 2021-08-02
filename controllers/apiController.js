@@ -405,7 +405,7 @@ exports.projectFilePUT = (req, res, next) => {
 
 			projectManager.save(req.params.projectID, root.outerHTML, release).then(
 				() => res.json({
-					msg: 'Položka přidána na časovou osu',
+					msg: '타임라인에 추가된 항목',
 					timeline: req.body.track,
 				}),
 				err => next(err)

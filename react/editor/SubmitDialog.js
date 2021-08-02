@@ -35,14 +35,14 @@ export default class SubmitDialog extends Component {
 					onRequestClose={this.handleCloseDialog}
 				>
 
-					<h2>Dokončení projektu</h2>
+					<h2>프로젝트 완료</h2>
 					<div>
 						<form onSubmit={this.handleSumbitDialog}>
-							<label htmlFor={'email'}>Emailová adresa: </label>
+							<label htmlFor={'email'}>Email 주소: </label>
 							<input type={'email'} name={'email'} required={true} size={30} value={this.state.email} onChange={this.handleEmailChanged}/>
 							<br/>
-							Doba zpracování projektu závisí na jeho délce.<br/>
-							Zadejte email a my vám zašleme odkaz na výsledné video hned, jak bude zpracované.
+							프로젝트의 처리 시간은 길이에 따라 다릅니다.<br/>
+							이메일을 입력하면 처리되는 즉시 결과 비디오에 대한 링크를 보내드립니다.
 							<br/>
 							<input type={'submit'} className={'success'} value={'Zahájit'}/>
 							<button onClick={this.handleCloseDialog}>Storno</button>

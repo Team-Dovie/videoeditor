@@ -21,11 +21,11 @@ export default class FetchErrorDialog extends Component {
 					overlayClassName={'overlay'}
 				>
 
-					<h2 className={'error'}><img src={'/icons/error.svg'} alt={'error'}/>Chyba komunikace se serverem</h2>
+					<h2 className={'error'}><img src={'/icons/error.svg'} alt={'error'}/>서버와 통신하는 동안 오류가 발생</h2>
 					<div>
 						<i>{this.props.msg}</i>
-						<p>Opakujte akci nebo obnovte stránku v prohlížeči.</p>
-						<button onClick={() => this.props.onClose()}>Zavřít</button>
+						<p>다시 시도하거나 브라우저에서 페이지를 새로고침하세요.</p>
+						<button onClick={() => this.props.onClose()}>닫기</button>
 					</div>
 				</Modal>
 			</div>

@@ -20,7 +20,7 @@ export default class LoadingDialog extends Component {
 					overlayClassName={'overlay'}
 				>
 
-					<h2>Načítání videoeditoru</h2>
+					<h2>비디오 편집기 로딩</h2>
 					<div>
 						<div className="loader"/>
 					</div>
